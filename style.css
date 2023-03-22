@@ -10,49 +10,79 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
-
-    
+    background-attachment: scroll; 
+       
 }
 .topbanner{
     text-align: center ;
     
     background-position: center;
-    background-repeat: no-repeat;
+    background-color: #000;
     text-align: center;
     font-style: italic;
-    
     font-family: Geneva, Tahoma;
     font-size: 50px;
     color: rgb(240, 239, 241);
-    height: 10%;
+    height: 60px;
     width: 100%;
+    position: relative;
  }
  .links{
-    width: 80%;
+  
     margin: auto;
-    padding: 5px ;
+    padding: 12px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #000;
  }
 .logo{
     width: 100px;
     cursor: pointer;
-    height: 2cm;
-
-}
+    }
 .links ul li{
     list-style: none;
     display: inline-block;
     padding: 10px;
     margin: 10px;
+    position: relative;
+    width: 80%;
 }
 .links ul li a{
     text-decoration: none;
     color: aliceblue;
     text-transform: uppercase;
     font-size: 20px;
+    width: %;
 
  
 }
+.links ul li::after{
+    content: "";
+    height: 4px;
+    width: 90%;
+    background: #ebf0f0;
+    position: absolute;
+    justify-content: space-between;
+    left: 0;
+    bottom: 0;
+}
+@media screen and (max-width: 10000px) {
+    .links ul li  {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+  }
+  p{
+    color: blue;
+    background-color: #070612;
+    font-size: 20px;
+    font-family:  Helvetica, sans-serif;
+
+  }
+  footer{
+    align-items: flex-end;
+  }
+  
